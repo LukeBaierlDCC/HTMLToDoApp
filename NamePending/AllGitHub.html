@@ -9,10 +9,14 @@
   <link rel="stylesheet" href="AllGitHub.CSS">
   <script src="NamePending.js" defer></script>
   <script src="AddRemoveTasks.js" defer></script>
-  
+  <script src="SearchBar.js" defer></script>
+
 </head>
 <body>
   <div class="header">
+
+    <a href="NamePending.html" class="link">Home</a>
+
     <div class="dropdown" data-dropdown>
       <button class="link" data-dropdown-button>To-Do List</button>
       <div class="dropdown-menu information-grid">
@@ -21,42 +25,41 @@
           <div class="dropdown-links">
             <a href="AllGitHub.html" class="link">All</a>
             <a href="ASPNETProjects.html" class="link">ASP.NET</a>
-            <a href="#" class="link">C#</a>
-            <a href="#" class="link">JavaScript</a>
+            <a href="CSharp.html" class="link">C#</a>
+            <a href="JavaScript.html" class="link">JavaScript</a>
           </div>
         </div>
         <div>
           <div class="dropdown-heading">freeCodeCamp Certs</div>
           <div class="dropdown-links">
             <a href="AllFreeCodeCamp.html" class="link">All</a>
-            <a href="#" class="link">Front End</a>
-            <a href="#" class="link">Back End</a>
-            <a href="#" class="link">Full Stack</a>
-            <a href="#" class="link">Data</a>
+            <a href="FrontEnd.html" class="link">Front End</a>
+            <a href="BackEnd.html" class="link">Back End</a>
+            <a href="FullStack.html" class="link">Full Stack</a>
+            <a href="DataFreeCodeCamp.html" class="link">Data</a>
           </div>
         </div>
         <div>
           <div class="dropdown-heading">More OnLine Learning</div>
           <div class="dropdown-links">
             <a href="AllMoreLearning.html" class="link">All</a>
-            <a href="#" class="link">Coursera</a>
-            <a href="#" class="link">LinkedIn Learning</a>
-            <a href="#" class="link">Microsoft Learning</a>
+            <a href="Coursera.html" class="link">Coursera</a>
+            <a href="LinkedInLearning.html" class="link">LinkedIn Learning</a>
+            <a href="MicrosoftLearning.html" class="link">Microsoft Learning</a>
           </div>
         </div>
         <div>
           <div class="dropdown-heading">For Exercise</div>
           <div class="dropdown-links">
             <a href="ForExercise.html" class="link">All</a>
-            <a href="#" class="link">CSS Exercises</a>
-            <a href="#" class="link">Instagram Exercises</a>
-            <a href="#" class="link">Interview Questions</a>
+            <a href="CSSExercises.html" class="link">CSS Exercises</a>
+            <a href="InstagramExercises.html" class="link">Instagram Exercises</a>
+            <a href="InterviewQuestions.html" class="link">Interview Questions</a>
           </div>
         </div>         
       </div>
-    </div>
+    </div>    
     
-    <a href="NamePending.html" class="link">Home</a>
     <a href="https://www.youtube.com/@programmerprepper3533/featured" 
     class="link">YouTube Channel</a>
     <div class="dropdown" data-dropdown>
@@ -82,6 +85,7 @@
 
   <div class="search-container">
     <input type="text" id="taskSearch" placeholder="Search specific task here!">
+    <button onclick="taskSearch()">Search</button><ul id=""></ul>
   </div>
 
   <main id="main">
@@ -90,28 +94,17 @@
   </main>
 
   <p>All <a href="ASPNETProjects.html">ASP.NET</a> Projects</p>
-  <p>All <a href="#">C#</a> Projects</p>
-  <p>All <a href="#">JavaScript</a> Projects</p>
+  <p>All <a href="CSharp.html">C#</a> Projects</p>
+  <p>All <a href="JavaScript.html">JavaScript</a> Projects</p>
   <p>BusRoute</p>
   <p>ChatHub</p>
   <p>TruckTrax</p>
   <p>Simulation Game</p>
   <p>Lemonade Stand</p>
 
-  <h2 class="addorremove">Add or Remove Additional Ideas Here</h2>
+  <h3>Remember your basic Git commands for pushing!</h3>
+  <p align="center"><strong></strong></p>  
   
-  <input type="text"
-  id="taskInput"
-  class="add-task"
-  align="center"
-  placeholder="Enter your task...">
-  <button onclick="addTask()">Add Task</button>
-  <ul id="taskList">
-
-
-  </ul>
-  
-<p align="center"><strong>See deadlines as a motivator. Not as a date to dread.</strong></p>
 </body>
 
 </html>

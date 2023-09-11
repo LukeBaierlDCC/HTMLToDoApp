@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="NamePending.CSS">
     <script src="NamePending.js" defer></script>
-    
+    <script src="AddRemoveTasks.js" defer></script>
+
   </head>
   <body>
     
     <div class="header">
+      <a href="NamePending.html" class="link">Home</a>
       <div class="dropdown" data-dropdown>
         <button class="link" data-dropdown-button>To-Do List</button>
         <div class="dropdown-menu information-grid">
@@ -19,7 +21,7 @@
             <div class="dropdown-heading">GitHub Projects</div>
             <div class="dropdown-links">
               <a href="AllGitHub.html" class="link">All</a>
-              <a href="#" class="link">ASP.NET</a>
+              <a href="ASPNETProjects.html" class="link">ASP.NET</a>
               <a href="#" class="link">C#</a>
               <a href="#" class="link">JavaScript</a>
             </div>
@@ -54,8 +56,7 @@
           </div>         
         </div>
       </div>
-            
-      <a href="NamePending.html" class="link">Home</a>
+      
       <a href="https://www.youtube.com/@programmerprepper3533/featured" 
       class="link">YouTube Channel</a>
       <div class="dropdown" data-dropdown>
@@ -107,7 +108,19 @@
       </figure>
     </div>
         
-    <p><strong>Respect the tester. He's helping you and your program improve.</strong></p>
+    <p><strong>Respect the tester. He's helping you and your program improve.</strong></p><br><br>
+
+    <h2 class="addorremove">Add or Remove Additional Ideas Here</h2>
+  
+    <input type="text"
+    id="taskInput"
+    class="add-task"
+    placeholder="Enter your task...">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList">
+
+
+    </ul>
 
   </body>
 </html>
