@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  background-color: #F8F8FF;
+}
+
+.header {
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: baseline;
+  padding: .5rem;
+  gap: 1rem;
+}
+
+.link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #777;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropdown.active + .link, .link:hover {
+  color: black;
+}
+
+.link:hover {
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + .25rem);
+  background-color: white;
+  padding: .75rem;
+  border-radius: .25rem;
+  box-sizing: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.information-grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 2rem;
+}
+
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.login-form > input {
+  margin-bottom: .5rem;
+}
+
+.search-container {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+#taskSearch {
+  padding: 5px;
+  width: 310px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+#main {  
+  border-radius: 10px;
+  margin-left: 20em;
+  margin-right: 20em;
+}
+
+#title {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  height: 5vh;
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 73vh;
+}
+
+.center-image img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 19px;
+  font-style: italic;
+}
+
+.right-image {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 55vh;
+}
+
+.right-image img {
+  max-width: fit-content;
+  max-height: fit-content;
+}

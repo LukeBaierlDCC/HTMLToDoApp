@@ -1,0 +1,9 @@
+h2 {
+  text-align: center;
+  
+}
+
+p {
+  text-align: center;
+  flex-direction: column;
+}
