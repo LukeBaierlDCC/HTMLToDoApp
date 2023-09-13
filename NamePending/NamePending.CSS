@@ -138,10 +138,6 @@ body {
   max-height: fit-content;
 }
 
-#add-task {
-  justify-content: center;
-}
-
 .todotasklist {
   display:contents;
   justify-content: center;
