@@ -1,7 +1,7 @@
 #fireflies-greeting {
   position: relative;
   left: 55vh;
-  top: 0;
+  top: 18vh;
   transform: translateY(-3vw);
   background-position: center;
   display:inline-flex;

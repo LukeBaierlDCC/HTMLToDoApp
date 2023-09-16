@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>    
+  <head>
     <title>Fireflies Forest</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="NamePending.CSS">      
+    <link rel="stylesheet" href="NamePending.CSS">
     <link rel="stylesheet" href="Fireflies.CSS">    
-    <link rel="stylesheet" href="FirefliesGreeting.css"
-
+    <link rel="stylesheet" href="FirefliesGreeting.css">
+    <script src="NamePending.js" defer></script>
   </head>
 
   <body>
@@ -82,9 +82,14 @@
         </div>
       </div>   
       
-    </div> 
+    </div>  
 
-    
+    <div class="search-container">
+      <input type="text" 
+      id="taskSearch" 
+      placeholder="Search specific task here!">
+      <button onclick="taskSearch()">Search</button><ul id=""></ul>
+    </div>
 
     <section id="fireflies-greeting" class="fireflies-greeting">
       <h1 class="fireflyintro">Fireflies at night!</h1>
@@ -110,7 +115,7 @@
       <div class="firefly"></div>
       <div class="firefly"></div>
     </div>
-    <script src="Fireflies.js"></script>
+    <script src="Fireflies.js" defer></script>
     
   </body>
   
