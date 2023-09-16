@@ -1,0 +1,27 @@
+#fireflies-greeting {
+  position: relative;
+  left: 55vh;
+  top: 0;
+  transform: translateY(-3vw);
+  background-position: center;
+  display:inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff80; 
+  background-image: linear-gradient(
+    62deg,
+    #3a3d40 0%,
+    #181719 100%);
+  border: 3px solid #000000;
+  border-radius: 15px;
+  font-size: 18px;
+  width: 465px;
+  height: 200px;
+}
+
+.fireflyintro {
+  color: azure;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  outline-color: rgb(238, 254, 176);
+}

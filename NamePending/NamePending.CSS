@@ -80,7 +80,7 @@ body {
   width: 310px;
   border: 1px solid #ccc;
   border-radius: 2px;
-  margin-right: 20px;
+  margin-right: 25px;
   text-align: left;
 }
 
@@ -130,7 +130,7 @@ body {
   display: flex;
   justify-content: right;
   align-items: center;
-  height: 55vh;
+  height: 65vh;
 }
 
 .right-image img {
