@@ -51,4 +51,12 @@ function attachDeleteListeners() {
     };
   });
 }
+
+var taskInput = document.getElementById('taskInput');
+taskInput.addEventListener('keydown', function (event) {
+  if (event.keyCode === 13) {
+    // 13 is the keycode for the "Enter" key
+    addTask();
+  }
+});
 //# sourceMappingURL=AddRemoveTasks.dev.js.map

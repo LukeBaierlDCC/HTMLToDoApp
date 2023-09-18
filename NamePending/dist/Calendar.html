@@ -129,6 +129,24 @@
           <ul class="calendar-dates"></ul>
       </div>
   </div>
+  
+  <ul class="calendar-dates" id="calendarDates"></ul>
+
+  <form id="eventForm">
+    <label for="eventTitle">Event Title:</label>
+    <input type="text" id="eventTitle" required>
+  
+    <label for="eventDate">Event Date:</label>
+    <input type="date" id="eventDate" required>
+  
+    <label for="eventDescription">Event Description:</label>
+    <textarea id="eventDescription" rows="4"></textarea>
+  
+    <label for="notificationTime">Notification Time (Optional):</label>
+    <input type="time" id="notificationTime">
+  
+    <button type="submit">Add Event</button>
+  </form>
 
   </body>
 </html>

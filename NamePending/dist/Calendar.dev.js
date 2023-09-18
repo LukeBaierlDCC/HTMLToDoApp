@@ -71,5 +71,5 @@ prenexIcons.forEach(function (icon) {
 
     manipulate();
   });
-});
+}); //Events
 //# sourceMappingURL=Calendar.dev.js.map
